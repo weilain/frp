@@ -16,6 +16,7 @@ type generalTestConfigures struct {
 	expectError bool
 }
 
+// defineClientServerTest test a normal tcp and udp proxy with specified TestConfigures.
 func defineClientServerTest(desc string, f *framework.Framework, configures *generalTestConfigures) {
 	It(desc, func() {
 		serverConf := consts.DefaultServerConfig
